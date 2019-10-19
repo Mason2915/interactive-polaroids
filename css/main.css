@@ -3,12 +3,16 @@ html {
 
   font-family: sans-serif;
 }
+*, *::before, *::after {
+  box-sizing: inherit;
+}
 
 .polaroid {
   margin: 0;
   padding: 10px;
   width: 250px;
-
+  position: absolute;
+  transition: all 1s linear;
   background-color: #fff;
   border-radius: 4px;
   box-shadow: 1px 4px 6px rgba(0, 0, 0, .5);
@@ -17,9 +21,4 @@ html {
 .polaroid > img {
   display: block;
   width: 100%;
-}
-
-.polaroid > figcaption {
-  color: #fff;
-  text-shadow: 1px 1px 3px #000;
 }
